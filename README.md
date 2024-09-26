@@ -2,12 +2,20 @@
 
 This is a **web-based doctor appointment application** built using the **MERN stack**. The system provides three main user interfaces:
 
-### 1. **Admin Panel**  
+### 1. **Admin Panel** 
+
+EMAIL: admin@admin.com
+password: 123456 
+
 The admin has the ability to:
 - Manage doctor approvals.
 - Approve or reject doctor applications.
 
 ### 2. **Doctor Panel**  
+
+EMAIL: doctor@doctor.com
+password: 123456
+
 Doctors have access to:
 - Receive appointment requests from patients.
 - Approve or reject appointment requests.
@@ -15,6 +23,10 @@ Doctors have access to:
 - Manage notifications from patients.
 
 ### 3. **Patient/User Panel**  
+
+EMAIL: patient@patient.com
+password: 123456
+
 Patients can:
 - Browse a list of available doctors.
 - Select a doctor and book an appointment based on the doctor’s available time slots.
@@ -39,8 +51,11 @@ Patients can:
 
 ---
 
-## Getting Started
+## LIVE URL
+- "npm run dev"
 
+## Getting Started
+- "npm run dev"
 ### Clone the repository
 
 ```bash
