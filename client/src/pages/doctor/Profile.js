@@ -71,7 +71,6 @@ const Profile = () => {
 
   useEffect(() => {
     getDoctorInfo();
-    //eslint-disable-next-line
   }, []);
   return (
     <Layout>

@@ -96,7 +96,6 @@ const BookingPage = () => {
 
   useEffect(() => {
     getUserData();
-    //eslint-disable-next-line
   }, []);
   return (
     <Layout>
