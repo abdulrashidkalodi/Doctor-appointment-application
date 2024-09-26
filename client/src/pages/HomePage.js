@@ -106,6 +106,10 @@ const HomePage = () => {
                 aria-label="Slide 3"
               ></button>
             </div>
+            <Row>
+              {doctors &&
+                doctors.map((doctor) => <DoctorList doctor={doctor} />)}
+            </Row>
             <div className="carousel-inner">
               <div id="carousel-items" className="carousel-item active ">
                 <img
@@ -116,14 +120,14 @@ const HomePage = () => {
               </div>
               <div id="carousel-items" className="carousel-item">
                 <img
-                  src="https://www.aryavaidyasala.com/webadmin/uploads/o_1b234katiegv7881d76n0d1ras7h.jpg"
+                  src="https://dims.healthgrades.com/dims3/MMH/68bfb76/2147483647/strip/true/crop/5616x3138+0+303/resize/800x447!/quality/75/?url=https%3A%2F%2Fucmscdn.healthgrades.com%2F24%2F9d%2F5655408743ca94d39a59d91c6e95%2Fimage-senior-male-laughing-in-hospital-bed.jpg"
                   className="d-block w-100 "
                   alt="notavble"
                 />
               </div>
               <div id="carousel-items" className="carousel-item">
                 <img
-                  src="https://www.aryavaidyasala.com/webadmin/uploads/o_1b234gn7f14dplodk8h1fiaqfk2a.jpg"
+                  src="https://dims.healthgrades.com/dims3/MMH/68bfb76/2147483647/strip/true/crop/5616x3138+0+303/resize/800x447!/quality/75/?url=https%3A%2F%2Fucmscdn.healthgrades.com%2F24%2F9d%2F5655408743ca94d39a59d91c6e95%2Fimage-senior-male-laughing-in-hospital-bed.jpg"
                   className="d-block w-100 "
                   alt="notavble"
                 />
@@ -173,9 +177,7 @@ const HomePage = () => {
           </div>
         </div>
       </Layout>
-      <Row>
-        {doctors && doctors.map((doctor) => <DoctorList doctor={doctor} />)}
-      </Row>
+
       <Footer />
     </div>
   );
