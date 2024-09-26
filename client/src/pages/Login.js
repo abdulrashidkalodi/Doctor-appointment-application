@@ -37,7 +37,6 @@ const Login = () => {
         className="register-form"
       >
         <h3 className="text-center">Login From</h3>
-
         <Form.Item label="Email" name="email">
           <Input type="email" required />
         </Form.Item>
@@ -50,14 +49,26 @@ const Login = () => {
         <button className="btn btn-primary" type="submit">
           Login
         </button>
+      </Form>
+      <Form className="register-form">
+        <h3 className="text-center">Login Instraction</h3>
         <div>
+          <h5 >1- admin Interface</h5>
           <div>admin Email : admin@admin.com</div>
           <div> admin password : 123456</div>
         </div>{" "}
         <br />
         <div>
+          <h5 >2- doctor Interface</h5>
           <div>doctor Email : doctor@doctor.com</div>
           <div> admin password : 123456</div>
+        </div>{" "}
+        <br />
+        <div>
+          <h5 >1- patient Interface</h5>
+          <div>patient Email : patient@patient.com</div>
+          <div> patient password : 123456</div>
+          
         </div>{" "}
       </Form>
     </div>
