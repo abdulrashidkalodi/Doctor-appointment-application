@@ -15,7 +15,10 @@
   "author": "rashid kalodi",
   "license": "MIT",
   "dependencies": {
+    "aos": "^2.3.4",
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
     "colors": "^1.4.0",
     "concurrently": "^7.6.0",
     "dotenv": "^16.0.3",
