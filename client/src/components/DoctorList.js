@@ -1,34 +1,64 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-const DoctorList = ({ doctor }) => {
-  const navigate = useNavigate();
+const DoctorList = ({ doctorsData }) => {
+  const doctorImages = [
+    "assets/img/doctors/doctors-1.jpg",
+    "assets/img/doctors/doctors-2.jpg",
+    "assets/img/doctors/doctors-3.jpg",
+    "assets/img/doctors/doctors-4.jpg",
+    // Add more paths if needed
+  ];
+
   return (
-    <>
-      <div
-        className="card m-2"
-        style={{ cursor: "pointer" }}
-        onClick={() => navigate(`/doctor/book-appointment/${doctor._id}`)}
-      >
-        <div className="card-header">
-          Dr. {doctor.firstName} {doctor.lastName}
-        </div>
-        <div className="card-body">
-          <p>
-            <b>Specialization</b> {doctor.specialization}
-          </p>
-          <p>
-            <b>Experience</b> {doctor.experience}
-          </p>
-          <p>
-            <b>Fees Per Cunsaltation</b> {doctor.feesPerCunsaltation}
-          </p>
-          <p>
-            <b>Timings</b> {doctor.timings[0]} - {doctor.timings[1]}
-          </p>
+    <section id="doctors" className="doctors section">
+      <div className="container section-title" data-aos="fade-up">
+        <h2>Our Doctors</h2>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+
+      <div className="container">
+        <div className="row gy-4">
+          {doctorsData?.map((doctor, index) => (
+            <div
+              className="col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay={100 * (index + 1)}
+              key={doctor._id}
+            >
+              <div className="team-member d-flex align-items-start">
+                <div className="pic">
+                  <img
+                    src={doctorImages[index % doctorImages.length]} // Loop through images
+                    className="img-fluid"
+                    alt={doctor.firstName}
+                  />
+                </div>
+                <div className="member-info">
+                  <h4>{doctor.firstName} {doctor.lastName}</h4>
+                  <span>{doctor.specialization}</span>
+                  <p>
+                    Experience: {doctor.experience} years<br />
+                    Fees: ₹{doctor.feesPerCunsaltation}<br />
+                    Email: {doctor.email}<br />
+                    Phone: {doctor.phone}<br />
+                    Address: {doctor.address}
+                  </p>
+                  <div className="social">
+                    <a href="#"><i className="bi bi-twitter-x" /></a>
+                    <a href="#"><i className="bi bi-facebook" /></a>
+                    <a href="#"><i className="bi bi-instagram" /></a>
+                    <a href="#"><i className="bi bi-linkedin" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
