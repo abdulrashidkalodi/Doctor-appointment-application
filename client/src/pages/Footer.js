@@ -12,13 +12,14 @@ function Footer() {
                 <span className="sitename">Medilab</span>
               </a>
               <div className="footer-contact pt-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
+                <p>HealthBridge Office</p>
+                <p>Malappuram, Kerala, India</p>
                 <p className="mt-3">
-                  <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                  <strong>Phone:</strong> <span>+91-9048116962</span>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@example.com</span>
+                  <strong>Email:</strong>{" "}
+                  <span>abdulrashidkalodi@gmail.com</span>
                 </p>
               </div>
               <div className="social-links d-flex mt-4">
@@ -46,7 +47,7 @@ function Footer() {
                   <a href="#">About us</a>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <a href="#">Book Appointment</a>
                 </li>
                 <li>
                   <a href="#">Terms of service</a>
@@ -60,23 +61,20 @@ function Footer() {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <a href="#">Web Design</a>
+                  <a href="#">Doctor Appointment Booking</a>
                 </li>
                 <li>
-                  <a href="#">Web Development</a>
+                  <a href="#">Patient Health Records (Coming Soon)</a>
                 </li>
                 <li>
-                  <a href="#">Product Management</a>
+                  <a href="#">Hospital Admin Dashboard</a>
                 </li>
                 <li>
-                  <a href="#">Marketing</a>
-                </li>
-                <li>
-                  <a href="#">Graphic Design</a>
+                  <a href="#">SMS Notifications</a>
                 </li>
               </ul>
             </div>
-            <div className="col-lg-2 col-md-3 footer-links">
+            {/* <div className="col-lg-2 col-md-3 footer-links">
               <h4>Hic solutasetp</h4>
               <ul>
                 <li>
@@ -115,28 +113,26 @@ function Footer() {
                   <a href="#">Flexo</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="container copyright text-center mt-4">
           <p>
             © <span>Copyright</span>{" "}
-            <strong className="px-1 sitename">Medilab</strong>{" "}
+            <strong className="px-1 sitename">HealthBridge</strong>{" "}
             <span>All Rights Reserved</span>
           </p>
           <div className="credits">
-            {/* All the links in the footer should remain intact. */}
-            {/* You can delete the links only if you've purchased the pro version. */}
-            {/* Licensing information: https://bootstrapmade.com/license/ */}
-            {/* Purchase the pro version with working PHP/AJAX contact form: [buy-url] */}
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>{" "}
-            Distributed by <a href="“https://themewagon.com">ThemeWagon</a>
+            Designed by{" "}
+            <a href="https://rashid-portfolio-five.vercel.app/">Rashid</a>{" "}
+            Distributed by{" "}
+            <a href="“https://rashid-portfolio-five.vercel.app/">HealthBridge</a>
           </div>
-          <a href="“https://themewagon.com"></a>
+          <a href="https://rashid-portfolio-five.vercel.app/"></a>
         </div>
-        <a href="“https://themewagon.com"></a>
+        <a href="https://rashid-portfolio-five.vercel.app/"></a>
       </footer>
-      <a href="“https://themewagon.com"></a>
+      <a href="https://rashid-portfolio-five.vercel.app/"></a>
     </div>
   );
 }
