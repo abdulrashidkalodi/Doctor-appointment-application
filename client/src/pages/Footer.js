@@ -23,16 +23,16 @@ function Footer() {
                 </p>
               </div>
               <div className="social-links d-flex mt-4">
-                <a href="">
+                <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/">
                   <i className="bi bi-twitter-x" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/">
                   <i className="bi bi-facebook" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/">
                   <i className="bi bi-instagram" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/">
                   <i className="bi bi-linkedin" />
                 </a>
               </div>

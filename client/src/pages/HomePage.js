@@ -136,10 +136,6 @@ const HomePage = () => {
               data-aos-delay={200}
             >
               <img src="assets/img/about.jpg" className="img-fluid" alt="" />
-              <a
-                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                className="glightbox pulsating-play-btn"
-              />
             </div>
             <div
               className="col-lg-6 content"

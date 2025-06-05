@@ -44,10 +44,10 @@ const Layout = ({ children }) => {
           <div className="container d-flex justify-content-center justify-content-md-between">
             <div className="contact-info d-flex align-items-center">
               <i className="bi bi-envelope d-flex align-items-center">
-                <a href="mailto:contact@example.com">contact@example.com</a>
+                <a href="mailto:contact@example.com">abdulrashidkalodi@gmail.com</a>
               </i>
               <i className="bi bi-phone d-flex align-items-center ms-4">
-                <span>+1 5589 55488 55</span>
+                <span>+91-9048116962</span>
               </i>
               <div className="d-block d-lg-none d-flex align-items-center gap-3">
                 {/* Profile + Notification Dropdown */}
@@ -121,16 +121,16 @@ const Layout = ({ children }) => {
               </div>
             </div>
             <div className="social-links d-none d-md-flex align-items-center">
-              <a href="#" className="twitter">
+              <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/" className="twitter">
                 <i className="bi bi-twitter-x"></i>
               </a>
-              <a href="#" className="facebook">
+              <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/" className="facebook">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="#" className="instagram">
+              <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/" className="instagram">
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="#" className="linkedin">
+              <a href="https://www.linkedin.com/in/abdul-rashid-k-297748264/" className="linkedin">
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>
