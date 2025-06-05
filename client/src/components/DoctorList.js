@@ -17,8 +17,8 @@ const DoctorList = ({ doctorsData }) => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Our Doctors</h2>
         <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
+          Our experienced medical professionals are committed to delivering
+          high-quality, personalized healthcare for every patient.
         </p>
       </div>
 

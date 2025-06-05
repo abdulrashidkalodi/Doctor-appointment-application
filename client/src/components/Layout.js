@@ -177,9 +177,9 @@ const Layout = ({ children }) => {
 
               <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-            <a className="cta-btn d-none d-sm-block" href="#appointment">
+            {/* <a className="cta-btn d-none d-sm-block" href="#appointment">
               Make an Appointment
-            </a>
+            </a> */}
             {/* Notification + Profile + Logout */}
             <div className="d-none d-lg-block d-flex align-items-center gap-3">
               {/* Profile + Notification Dropdown */}

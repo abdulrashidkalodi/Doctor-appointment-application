@@ -44,15 +44,18 @@ const HomePage = () => {
             <h2>
               WELCOME TO MEDILAB{" "}
               <span
+                className="user-badge text-uppercase"
                 style={{
                   backgroundColor: "#1977cc",
                   color: "#fff",
                   padding: "6px 16px",
-                  borderRadius: "30px", // Round both ends
+                  borderRadius: "30px",
                   display: "inline-block",
+                  textTransform: "uppercase",
                 }}
               >
-                Mr, {user.name}
+                {" "}
+                Mr , {user?.name || "Guest"}{" "}
               </span>
             </h2>
             <p>
