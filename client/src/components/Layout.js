@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { Badge, message } from "antd";
 import "../styles/LayoutStyles.css";
 import { adminMenu, userMenu } from "./../Data/data";
-import logo from '../Assets/Image/medical-symbol.png';
+import logo from "../Assets/Image/medical-symbol.png";
 const Layout = ({ children }) => {
   const { user } = useSelector((state) => state.user);
   const location = useLocation();
@@ -151,23 +151,36 @@ const Layout = ({ children }) => {
 
             {/* Dynamic Nav Menu */}
             <nav id="navmenu" className="navmenu">
-              <ul>
+              <ul className="list-unstyled d-flex gap-3 m-0 p-0">
                 {menuItems.map((menu) => (
                   <li
                     key={menu.name}
-                    className={location.pathname === menu.path ? "active" : ""}
+                    className={
+                      location.pathname === menu.path
+                        ? "fw-bold  border-primary"
+                        : ""
+                    }
                   >
-                    <Link to={menu.path}>
-                      <i className={menu.icon}></i> {menu.name}
+                    <Link
+                      to={menu.path}
+                      className="text-decoration-none px-2 py-1 d-inline-block"
+                      style={{
+                        fontSize: "1.1rem",
+                        color:
+                          location.pathname === menu.path ? "#0d6efd" : "#333",
+                      }}
+                    >
+                      {menu.name}
                     </Link>
                   </li>
                 ))}
               </ul>
+
               <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-              <a className="cta-btn d-none d-sm-block" href="#appointment">
-                Make an Appointment
-              </a>
+            <a className="cta-btn d-none d-sm-block" href="#appointment">
+              Make an Appointment
+            </a>
             {/* Notification + Profile + Logout */}
             <div className="d-none d-lg-block d-flex align-items-center gap-3">
               {/* Profile + Notification Dropdown */}
