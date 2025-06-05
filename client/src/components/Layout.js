@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { Badge, message } from "antd";
 import "../styles/LayoutStyles.css";
 import { adminMenu, userMenu } from "./../Data/data";
-import logo from "../Assets/Image/medical-symbol.png";
 const Layout = ({ children }) => {
   const { user } = useSelector((state) => state.user);
   const location = useLocation();
@@ -142,9 +141,9 @@ const Layout = ({ children }) => {
           <div className="container position-relative d-flex align-items-center justify-content-between">
             <Link to="/" className="logo d-flex align-items-center me-auto">
               <img
-                src={logo}
+                src='assets/img/logoo.jpg'
                 alt="logo"
-                style={{ width: "40px", marginRight: "20px" }}
+                style={{ width: "40px", marginRight: "30px" }}
               />
               <h1 className="sitename">Medilab</h1>
             </Link>
