@@ -53,7 +53,7 @@ Patients can:
 ---
 
 ## LIVE URL
-- "npm run dev"
+- https://doctor-appointment-application-luta.onrender.com/
 
 ## Getting Started
 - "npm run dev"
