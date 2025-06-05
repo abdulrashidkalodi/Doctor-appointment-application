@@ -12,7 +12,7 @@ function Footer() {
                 <span className="sitename">Medilab</span>
               </a>
               <div className="footer-contact pt-3">
-                <p>HealthBridge Office</p>
+                <p>MediLab Office</p>
                 <p>Malappuram, Kerala, India</p>
                 <p className="mt-3">
                   <strong>Phone:</strong> <span>+91-9048116962</span>
@@ -119,14 +119,14 @@ function Footer() {
         <div className="container copyright text-center mt-4">
           <p>
             © <span>Copyright</span>{" "}
-            <strong className="px-1 sitename">HealthBridge</strong>{" "}
+            <strong className="px-1 sitename">MediLab</strong>{" "}
             <span>All Rights Reserved</span>
           </p>
           <div className="credits">
             Designed by{" "}
             <a href="https://rashid-portfolio-five.vercel.app/">Rashid</a>{" "}
             Distributed by{" "}
-            <a href="“https://rashid-portfolio-five.vercel.app/">HealthBridge</a>
+            <a href="“https://rashid-portfolio-five.vercel.app/">MediLab</a>
           </div>
           <a href="https://rashid-portfolio-five.vercel.app/"></a>
         </div>

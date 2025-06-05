@@ -4,8 +4,11 @@ import Layout from "./../components/Layout";
 import { Row } from "antd";
 import DoctorList from "../components/DoctorList";
 import Footer from "./Footer";
+import { useSelector } from "react-redux";
 const HomePage = () => {
   const [doctors, setDoctors] = useState([]);
+  const { user } = useSelector((state) => state.user);
+
   // login user data
   const getUserData = async () => {
     try {
@@ -38,7 +41,20 @@ const HomePage = () => {
             data-aos="fade-down"
             data-aos-delay={100}
           >
-            <h2>WELCOME TO MEDICONNECT</h2>
+            <h2>
+              WELCOME TO MEDILAB{" "}
+              <span
+                style={{
+                  backgroundColor: "#1977cc",
+                  color: "#fff",
+                  padding: "6px 16px",
+                  borderRadius: "30px", // Round both ends
+                  display: "inline-block",
+                }}
+              >
+                Mr, {user.name}
+              </span>
+            </h2>
             <p>
               Connecting patients, doctors, and hospitals — all in one place.
             </p>
@@ -47,9 +63,9 @@ const HomePage = () => {
           <div className="content row gy-4">
             <div className="col-lg-4 d-flex align-items-stretch">
               <div className="why-box" data-aos="zoom-out" data-aos-delay={200}>
-                <h3>Why Choose MediConnect?</h3>
+                <h3>Why Choose MEDILAB?</h3>
                 <p>
-                  MediConnect is designed to simplify the healthcare process by
+                  MEDILAB is designed to simplify the healthcare process by
                   allowing patients to book appointments from the comfort of
                   their homes. The system supports doctors in managing their
                   schedules and helps hospital administrators oversee
@@ -144,7 +160,7 @@ const HomePage = () => {
             >
               <h3>About Us</h3>
               <p>
-                HealthBridge is a modern appointment scheduling platform for
+                MediLab is a modern appointment scheduling platform for
                 hospitals, clinics, and private practitioners. Our system brings
                 together patients, doctors, and management under one secure
                 environment.
