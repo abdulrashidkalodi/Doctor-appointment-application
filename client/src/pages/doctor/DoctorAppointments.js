@@ -5,13 +5,14 @@ import axios from "axios";
 
 import moment from "moment";
 import { message, Table } from "antd";
+import api from "../../axios";
 
 const DoctorAppointments = () => {
   const [appointments, setAppointments] = useState([]);
 
   const getAppointments = async () => {
     try {
-      const res = await axios.get("/api/v1/doctor/doctor-appointments", {
+      const res = await api.get("/api/v1/doctor/doctor-appointments", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -30,7 +31,7 @@ const DoctorAppointments = () => {
 
   const handleStatus = async (record, status) => {
     try {
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/doctor/update-status",
         { appointmentsId: record._id, status },
         {

@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { showLoading, hideLoading } from "../redux/features/alertSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import api from "../axios";
 
 const NotificationPage = () => {
   const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const NotificationPage = () => {
   const handleMarkAllRead = async () => {
     try {
       dispatch(showLoading());
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/user/get-all-notification",
         {
           userId: user._id,
@@ -42,7 +43,7 @@ const NotificationPage = () => {
   const handleDeleteAllRead = async () => {
     try {
       dispatch(showLoading());
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/user/delete-all-notification",
         { userId: user._id },
         {

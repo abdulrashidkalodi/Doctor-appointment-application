@@ -5,6 +5,7 @@ import { Row } from "antd";
 import DoctorList from "../components/DoctorList";
 import Footer from "./Footer";
 import { useSelector } from "react-redux";
+import api from "../axios";
 const HomePage = () => {
   const [doctors, setDoctors] = useState([]);
   const { user } = useSelector((state) => state.user);
@@ -12,7 +13,7 @@ const HomePage = () => {
   // login user data
   const getUserData = async () => {
     try {
-      const res = await axios.get("/api/v1/user/getAllDoctors", {
+      const res = await api.get("/api/v1/user/getAllDoctors", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

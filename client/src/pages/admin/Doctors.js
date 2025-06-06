@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Layout from "./../../components/Layout";
 import axios from "axios";
 import { message, Table } from "antd";
+import api from "../../axios";
 
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
   //getUsers
   const getDoctors = async () => {
     try {
-      const res = await axios.get("/api/v1/admin/getAllDoctors", {
+      const res = await api.get("/api/v1/admin/getAllDoctors", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -24,7 +25,7 @@ const Doctors = () => {
   // handle account
   const handleAccountStatus = async (record, status) => {
     try {
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/admin/changeAccountStatus",
         { doctorId: record._id, userId: record.userId, status: status },
         {

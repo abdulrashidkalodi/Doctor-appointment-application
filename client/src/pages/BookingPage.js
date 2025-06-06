@@ -6,6 +6,7 @@ import { DatePicker, message, TimePicker } from "antd";
 import moment from "moment";
 import { useDispatch, useSelector } from "react-redux";
 import { showLoading, hideLoading } from "../redux/features/alertSlice";
+import api from "../axios";
 
 const BookingPage = () => {
   const { user } = useSelector((state) => state.user);
@@ -18,7 +19,7 @@ const BookingPage = () => {
   // login user data
   const getUserData = async () => {
     try {
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/doctor/getDoctorById",
         { doctorId: params.doctorId },
         {
@@ -38,7 +39,7 @@ const BookingPage = () => {
   const handleAvailability = async () => {
     try {
       dispatch(showLoading());
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/user/booking-availbility",
         { doctorId: params.doctorId, date, time },
         {
@@ -68,7 +69,7 @@ const BookingPage = () => {
         return alert("Date & Time Required");
       }
       dispatch(showLoading());
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/user/book-appointment",
         {
           doctorId: params.doctorId,

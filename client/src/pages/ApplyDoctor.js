@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { showLoading, hideLoading } from "../redux/features/alertSlice";
 import axios from "axios";
 import moment from "moment";
+import api from "../axios";
 const ApplyDoctor = () => {
   const { user } = useSelector((state) => state.user);
 
@@ -15,7 +16,7 @@ const ApplyDoctor = () => {
   const handleFinish = async (values) => {
     try {
       dispatch(showLoading());
-      const res = await axios.post(
+      const res = await api.post(
         "/api/v1/user/apply-doctor",
         {
           ...values,
