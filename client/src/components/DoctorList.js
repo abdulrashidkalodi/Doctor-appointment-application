@@ -5,10 +5,10 @@ const DoctorList = ({ doctorsData }) => {
   const navigate = useNavigate(); // ✅ Initialize navigate function
 
   const doctorImages = [
-    "assets/img/doctors/doctors-1.jpg",
-    "assets/img/doctors/doctors-2.jpg",
-    "assets/img/doctors/doctors-3.jpg",
-    "assets/img/doctors/doctors-4.jpg",
+    "/assets/img/doctors/doctors-1.jpg",
+    "/assets/img/doctors/doctors-2.jpg",
+    "/assets/img/doctors/doctors-3.jpg",
+    "/assets/img/doctors/doctors-4.jpg",
     // Add more paths if needed
   ];
 

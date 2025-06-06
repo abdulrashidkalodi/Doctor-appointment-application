@@ -35,7 +35,7 @@ const HomePage = () => {
       <Layout />
       {/* Hero Section */}
       <section id="hero" className="hero section light-background">
-        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
+        <img src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
         <div className="container position-relative">
           <div
             className="welcome position-relative"
@@ -155,7 +155,7 @@ const HomePage = () => {
               data-aos="fade-up"
               data-aos-delay={200}
             >
-              <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+              <img src="/assets/img/about.jpg" className="img-fluid" alt="" />
             </div>
             <div
               className="col-lg-6 content"

@@ -155,7 +155,7 @@ const Layout = ({ children }) => {
           <div className="container position-relative d-flex align-items-center justify-content-between">
             <Link to="/" className="logo d-flex align-items-center me-auto">
               <img
-                src="assets/img/logoo.jpg"
+                src="/assets/img/logoo.jpg"
                 alt="logo"
                 style={{ width: "40px", marginRight: "30px" }}
               />
